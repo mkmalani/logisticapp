@@ -96,3 +96,10 @@ ion-title {
   --height: calc(100% - 40px);
   --border-radius: 10px;
 }
+
+.my-rating-modal .modal-wrapper {
+  --background: rgb(0 0 0 / 30%);
+  --width: calc(100% - 80px);
+  --height: calc(100% - 160px);
+  --border-radius: 10px;
+}

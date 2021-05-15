@@ -1,0 +1,43 @@
+.main-div {
+    text-align: center;
+    .head-div {
+        border-bottom: 1px solid #9a9cb8;
+    }
+    h2 {
+        margin: 0;
+        padding: 15px !important;
+    }
+    .star-div {
+        padding: 15px;
+        font-size: 40px;
+        ion-icon:not(:last-child) {
+            padding-right: 10px;
+        }
+    }
+    .rating-div {
+        padding: 15px;
+        font-size: 30px;
+    }
+    .text-area-sec {
+        padding: 20px;
+        text-align: initial;
+        p {
+            font-family: "montserratsemibold";
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        ion-textarea {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            color: #000;
+            padding: 5px 15px;
+            height: 225px;
+        }
+    }
+    .btn {
+        height: 44px !important;
+        width: 130px !important;
+        font-size: 15px !important;
+    }
+}
