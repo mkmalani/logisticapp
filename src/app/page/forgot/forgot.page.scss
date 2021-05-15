@@ -1,0 +1,35 @@
+.header-content {
+  height: 250px;
+  position: relative;
+
+  .lock-icon-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  .arrow-back {
+    position: absolute;
+    width: 8px;
+    top: 25px;
+    left: 15px;
+  }
+}
+.forgot-body {
+    text-align: center;
+    margin-top: 40px;
+    .title {
+        font-family: 'montserratbold';
+        letter-spacing: 1px;
+    }
+    .desc {
+        margin: 30px 10px;
+        font-size: 18px;
+    }
+}

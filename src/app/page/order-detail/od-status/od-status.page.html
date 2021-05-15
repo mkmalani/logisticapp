@@ -1,0 +1,52 @@
+<div class="full-status-div">
+    <div class="status-tab-sec">
+        <div class="status-tab-sec-inner">
+            <div class="status-tab" [class.active]="activeTab === 'loading'" (click)="changeTab('loading')">
+                Update Loading Point
+            </div>
+            <div class="status-tab" [class.active]="activeTab === 'unLoading'" (click)="changeTab('unLoading')">
+                Update Unloading Point
+            </div>
+        </div>
+    </div>
+    <div class="loading-point-sec" *ngIf="activeTab === 'loading'">
+        <div class="full-loading-container">
+            <div class="single-block">
+                <p>Order Booked</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Arrived at Loading Point</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Halted at loading Point</p>
+                <p>3 Minutes</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Departed from Loading Point</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+        </div>
+    </div>
+    <div class="loading-point-sec" *ngIf="activeTab === 'unLoading'">
+        <div class="full-loading-container">
+            <div class="single-block">
+                <p>Order Booked</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Arrived at Loading Point</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Halted at loading Point</p>
+                <p>3 Minutes</p>
+            </div>
+            <div class="single-block">
+                <p>Vehicle Departed from Loading Point</p>
+                <p>09 Mar, 2021 - 10:49 AM</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,203 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+      <img src="assets/editprofile/ionic-ios-arrow-back.png" />
+    </div>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background">
+    <img src="assets/editprofile/2.png">
+  </div>
+  <div class="editprofile-body">
+    <div class="app-form">
+      <ion-grid class="form-background" *ngIf="pageStep === '1'">
+        <ion-row class="ion-no-margin" style="margin: 0;">
+          <ion-col size="12" class="mt-50">
+            <div class="menu-header-content">
+              <div class="user-profile">
+                <img src="assets/menu/user.png">
+                <div class="user-profile-edit-icon">
+                  <img src="assets/menu/edit.png">
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>EMAIL</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="EMAIL"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>NAME</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="NAME"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>COMPANY NAME</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="COMPANY NAME"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>PHONE NUMBER</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="PHONE NUMBER"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="ion-text-center mb-35">
+            <ion-button color="theme" shape="round" class="btn" (click)="nextStep('2')">NEXT</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="form-background" *ngIf="pageStep === '2'">
+        <ion-row>
+          <ion-col size="12" class="m-t-40">
+            <ion-label>CITY</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="CITY"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>GST NUMBER</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="GST NUMBER"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>SELECT TDS</ion-label>
+            <ion-item lines="none">
+              <ion-select placeholder="SELECT TDS">
+                <ion-select-option value="OLD SCHEME">OLD SCHEME</ion-select-option>
+                <ion-select-option value="NEW SCHEME">NEW SCHEME</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>PAN NUMBER</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="PAN NUMBER"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="ion-text-center mb-35">
+            <ion-button color="theme" shape="round" class="btn" (click)="nextStep('3')">NEXT</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="form-background" *ngIf="pageStep === '3'">
+        <ion-row>
+          <ion-col size="12" class="m-t-40">
+            <ion-label>NAME OF PAN</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="NAME OF PAN"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>ACCOUNT NUMBER</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="ACCOUNT NUMBER"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>ACCOUNT HOLDER'S NAME</ion-label>
+            <ion-item lines="none">
+              <ion-input type="text" placeholder="ACCOUNT HOLDER'S NAME"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-label>SELECT GPS PROVIDER</ion-label>
+            <ion-item lines="none">
+              <ion-select placeholder="SELECT GPS PROVIDER">
+                <ion-select-option value="OLD SCHEME">OLD SCHEME</ion-select-option>
+                <ion-select-option value="NEW SCHEME">NEW SCHEME</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="ion-text-center mb-35">
+            <ion-button color="theme" shape="round" class="btn" (click)="nextStep('4')">NEXT</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="form-background" *ngIf="pageStep === '4'">
+        <ion-row>
+          <ion-col size="12" class="m-t-40">
+            <ion-label>TOKEN</ion-label>
+            <ion-item lines="none" class="is-password-field">
+              <ion-input [type]="passwordType || 'password'" placeholder="TOKEN"></ion-input>
+              <ion-button fill="clear" size="default" slot="end" (click)="togglePasswordType()"
+                class="password-view-icon">
+                <ion-icon *ngIf="passwordType === 'text'" slot="icon-only" name="eye-off"></ion-icon>
+                <ion-icon *ngIf="passwordType !== 'text'" slot="icon-only" name="eye"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-label>PAN CARD</ion-label>
+            <div class="upload-section">
+              <img src="assets/signup/awesome-cloud-upload-alt.png" />
+              <input type="file" class="upload-input" />
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label>PAN CARD</ion-label>
+            <div class="upload-section">
+              <img src="assets/signup/awesome-cloud-upload-alt.png" />
+              <input type="file" class="upload-input" />
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label>VISITING CARD</ion-label>
+            <div class="upload-section">
+              <img src="assets/signup/awesome-cloud-upload-alt.png" />
+              <input type="file" class="upload-input" />
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label>CANCELLED CHEQUE</ion-label>
+            <div class="upload-section">
+              <img src="assets/signup/awesome-cloud-upload-alt.png" />
+              <input type="file" class="upload-input" />
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="ion-text-center mb-35">
+            <ion-button color="theme" shape="round" class="btn" (click)="submit()">SIGN UP</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,142 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>New Load</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="app-form">
+    <ion-grid class="popup-form" style="padding: 0px 15px;">
+      <ion-row>
+        <ion-col size="12" class="m-t-20">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Source"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Destination"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-select placeholder="Material Type">
+              <ion-select-option value="0">Two Vehicle</ion-select-option>
+              <ion-select-option value="1">Three Vehicle</ion-select-option>
+              <ion-select-option value="2">Four Vehicle</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Load Type" readonly></ion-input>
+            <div class="radio-group" (click)="isLoadType = !isLoadType">
+              <img src="assets/newload/radio-fill.png" *ngIf="!isLoadType"/>
+              <img src="assets/newload/radio-unfill.png" *ngIf="isLoadType"/>
+              <span class="label">Ftl</span>
+            </div>
+            <div class="radio-group" (click)="isLoadType = !isLoadType">
+              <img src="assets/newload/radio-fill.png" *ngIf="isLoadType"/>
+              <img src="assets/newload/radio-unfill.png" *ngIf="!isLoadType"/>
+              <span class="label">Ptl</span>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-select placeholder="Truck Type">
+              <ion-select-option value="0">Two Vehicle</ion-select-option>
+              <ion-select-option value="1">Three Vehicle</ion-select-option>
+              <ion-select-option value="2">Four Vehicle</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Weight"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Uom"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="My Budget (&#8377;)"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Pickup Date"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Insurance" readonly></ion-input>
+            <div class="radio-group" (click)="isInsurance = !isInsurance">
+              <img src="assets/newload/radio-fill.png" *ngIf="!isInsurance"/>
+              <img src="assets/newload/radio-unfill.png" *ngIf="isInsurance"/>
+              <span class="label">Ftl</span>
+            </div>
+            <div class="radio-group" (click)="isInsurance = !isInsurance">
+              <img src="assets/newload/radio-fill.png" *ngIf="isInsurance"/>
+              <img src="assets/newload/radio-unfill.png" *ngIf="!isInsurance"/>
+              <span class="label">Ptl</span>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-label class="title">Material</ion-label>
+          <ion-row class="box-row">
+            <ion-col size="3" class="box-col">
+              <ion-label class="box-label">Height</ion-label>
+              <ion-input class="box-input" type="text" placeholder="Height"></ion-input>
+            </ion-col>
+            <ion-col size="3" class="box-col">
+              <ion-label class="box-label">Weight</ion-label>
+              <ion-input class="box-input" type="text" placeholder="Weight"></ion-input>
+            </ion-col>
+            <ion-col size="3" class="box-col">
+              <ion-label class="box-label">Length</ion-label>
+              <ion-input class="box-input" type="text" placeholder="Length"></ion-input>
+            </ion-col>
+            <ion-col size="3" class="box-col">
+              <ion-label class="box-label">Thick</ion-label>
+              <ion-input class="box-input" type="text" placeholder="Thick"></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="12" class="m-t-10" class="formo-box">
+          <img src="assets/newload/formo.png" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center m-t-10 m-b-20">
+          <ion-button color="success" shape="round" class="btn" (click)="navigate()">SAVE</ion-button>
+          <ion-button color="danger" shape="round" class="btn" (click)="navigate()">CANCEL</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

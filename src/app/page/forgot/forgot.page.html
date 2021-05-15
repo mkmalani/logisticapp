@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="header-content">
+    <div class="arrow-back" (click)="navigate()">
+      <img src="assets/forgot/ionic-ios-arrow-back.png" />
+    </div>
+    <div class="lock-icon-content">
+      <img src="assets/forgot/lock.png" />
+    </div>
+  </div>
+  <div class="forgot-body">
+    <h2 class="title">Forgot your password?</h2>
+    <p class="desc">Please enter the email address associated
+      with your account. We will email you a
+      link to reset your password.</p>
+  </div>
+  <div class="app-form">
+    <ion-grid class="ion-margin">
+      <ion-row>
+        <ion-col size="12" class="m-t-10 m-b-10">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="EMAIL"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center m-t-10 m-b-10">
+          <ion-button color="theme" shape="round" class="btn" (click)="navigate()">SEND</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

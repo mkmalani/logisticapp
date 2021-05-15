@@ -1,0 +1,61 @@
+<ion-header [translucent]="false" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+			<img src="assets/my-bids/back.svg" />
+		</div>
+    <ion-buttons slot="end">
+      <ion-button class="pad-btn">
+        <img class="header-btn" src="../../../assets/routes-rates/Icon awesome-search.png" />
+      </ion-button>
+      <ion-button class="pad-btn">
+        <img class="header-btn" src="../../../assets/routes-rates/Icon feather-filter.png" />
+      </ion-button>
+      <ion-button class="pad-btn" (click)="addRoute()">
+        <img class="header-btn" src="../../../assets/routes-rates/Group 13218.png" />
+      </ion-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="../../../assets/my-bids/header.png" style="position: absolute; top: 0; z-index: -1;" alt="">
+  <div class="title-head">
+    <div>Routes & Rates</div>
+    <div>2 Routes found</div>
+  </div>
+  <div class="main-div">
+    <div class="single-block">
+      <div class="single-block-inner">
+        <div class="w-100">
+          <p class="first-child">Talegaon Dab hade - Dahej</p>
+        </div>
+        <div class="d-flex">
+          <div class="w-75">
+            <p class="second-child">West | 40ft Trailer</p>
+            <p class="third-child">Onward</p>
+            <p class="second-child">3 days - &#8377;2850</p>
+          </div>
+          <div class="img-div"><img src="assets/routes-rates/Group 13172.png" alt=""></div>
+          <div class="img-div ml-10"><img src="assets/routes-rates/Group 13171.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="single-block">
+      <div class="single-block-inner">
+        <div class="w-100">
+          <p class="first-child">Talegaon Dab hade - Dahej</p>
+        </div>
+        <div class="d-flex">
+          <div class="w-75">
+            <p class="second-child">West | 40ft Trailer</p>
+            <p class="third-child">Onward</p>
+            <p class="second-child">3 days - &#8377;2850</p>
+          </div>
+          <div class="img-div"><img src="assets/routes-rates/Group 13172.png" alt=""></div>
+          <div class="img-div ml-10"><img src="assets/routes-rates/Group 13171.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,80 @@
+ion-content {
+    // --background: url("../../../assets/order-detail/header.png") no-repeat 100% 0% / contain;
+    --background: rgb(244, 245, 249);
+    // border: none;
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
+    // background-size: cover;
+    // background-position: center bottom;
+    --offset-top: 79px !important;
+}
+ion-header {
+    background: url("../../../assets/my-bids/header.png") no-repeat 100% 0% / contain;
+    border: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+    font-family: "montserratsemibold";
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    color: #fff;
+    ion-menu-button {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+}
+.title-head {
+    font-size: 14px;
+    color: #fff;
+    font-family: "montserratmedium";
+    text-align: center;
+}
+
+.main-div {
+    padding: 0 15px;
+    margin-top: 35%;
+    .single-block {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 22px 56px rgb(0 0 0 / 5%);
+        .single-block-inner {
+            padding: 15px;
+            .d-flex {
+                display: flex;
+            }
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 6px;
+            }
+            .desc-div {
+                margin-left: 15px;
+                width: 100%;
+                position: relative;
+                .p-15 {
+                    padding-top: 15px;
+                }
+                div:first-child {
+                    font-size: 14px;
+                    color: #000000;
+                    position: absolute;
+                    right: 0;
+                }
+                .first-child {
+                    font-size: 18px;
+                }
+                .other-child {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    color: #9A9CB8;
+                }
+            }
+        }
+    }
+}

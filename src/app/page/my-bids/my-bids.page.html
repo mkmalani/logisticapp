@@ -1,0 +1,43 @@
+<ion-header [translucent]="false" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+			<img src="assets/my-bids/back.svg" />
+		</div>
+    <ion-title>My Bids</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="../../../assets/my-bids/header.png" style="position: absolute; top: 0; z-index: -1;" alt="">
+  <div class="main-div">
+    <div class="single-block" *ngFor="let row of data">
+      <div class="single-block-inner">
+        <p class="first-child">Hazia - Hydrabad</p>
+        <p class="second-child">9 Mar, 2021 - 10:49 PM | 40ft Trailer, 743 kms</p>
+        <p class="third-child">Lowest Bidding Amount</p>
+        <p class="second-child">&#8377;2850</p>
+      </div>
+      <div class="single-block-inner">
+        <div class="other-block">
+          <div class="top-div">
+            <p class="p1">Active</p>
+            <p class="p2">Your Bid</p>
+          </div>
+          <div class="top-div">
+            <p class="p3">6 hours to go</p>
+            <p class="p4">&#8377;2850</p>
+          </div>
+          <div class="top-div">
+            <p class="p5">Target Price: &#8377;2800</p>
+            <p (click)="row.isEdit = !row.isEdit" *ngIf="row.isEdit"><img src="assets/my-bids/Group13337.png" alt=""></p>
+            <div class="input-container" *ngIf="!row.isEdit">
+              <p class="input-sign">&#8377;</p>
+              <input class="input-field" type="number" name="usrnm">
+            </div>
+            <p *ngIf="!row.isEdit" style="margin-left: 4px;" (click)="row.isEdit = !row.isEdit"><img src="assets/my-bids/Group13338.png" alt=""></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

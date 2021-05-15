@@ -1,0 +1,38 @@
+ion-content {
+    --background: #fff;
+    --offset-top: 79px !important;
+    .background {
+        position: absolute;
+        z-index: -1;
+        top: 0; 
+    }
+}
+ion-header {
+    background: url("../../../assets/signup/2.png") no-repeat 100% 0% / contain;
+    border: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    color: #fff;
+}
+.signup-header {
+    color: #fff;
+    .signup-header-content {
+        position: absolute;
+        bottom: 25%;
+        padding: 0px 20px;
+        width: 100%;
+        h2 {
+            font-family: 'montserratbold';
+            text-transform: uppercase;
+        }
+    }
+}
+.signup-body {
+    margin-top: 60%;
+}

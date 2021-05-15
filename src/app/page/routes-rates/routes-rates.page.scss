@@ -1,0 +1,96 @@
+ion-content {
+    // --background: url("../../../assets/order-detail/header.png") no-repeat 100% 0% / contain;
+    --background: rgb(244, 245, 249);
+    // border: none;
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
+    // background-size: cover;
+    // background-position: center bottom;
+    --offset-top: 79px !important;
+}
+ion-header {
+    background: url("../../../assets/my-bids/header.png") no-repeat 100% 0% / contain;
+    border: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    color: #fff;
+    ion-menu-button {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+}
+.p-7 {
+    padding: 7px;
+}
+.pad-btn {
+    padding: 0px 5px;
+}
+.header-btn {
+    width: 20px;
+}
+
+.title-head {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 15px;
+    div:first-child {
+        font-family: 'montserratsemibold';
+        font-size: 20px;
+    }
+    div:last-child {
+        font-size: 14px;
+        padding-top: 7px;
+    }
+}
+
+.main-div {
+    padding: 0 15px;
+    margin-top: 30%;
+    .single-block {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 22px 56px rgb(0 0 0 / 5%);
+        .single-block-inner {
+            padding: 20px;
+            .w-75 {
+                width: 75%;
+            }
+            .first-child {
+                font-size: 18px;
+                // font-weight: 500;
+            }
+            .third-child {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            .second-child {
+                font-size: 14px;
+                margin-top: 10px;
+                color: #9A9CB8;
+            }
+            img {
+                // height: 35px;
+                width: 40px;
+            }
+            .img-div {
+                display: flex;
+                align-items: center;
+            }
+            .ml-10 {
+                margin-left: 10px;
+            }
+            .d-flex {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="header-btns">
+      <ion-button><img src="assets/booking-history/search.png" alt=""></ion-button>
+      <ion-button (click)="presentModal()"><img src="assets/booking-history/filter.png" alt=""></ion-button>
+      <ion-button (click)="goToNotification()"><img src="assets/booking-history/notification.png" alt=""></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/order-detail/header.png" class="header-img" alt="">
+  <div class="page-title">
+    <div class="head">Booking History</div>
+    <div class="od-count">1 Order</div>
+  </div>
+  <div class="bh-tab-section">
+    <ul>
+      <li [class.active]="activeTab === 'pending'" (click)="changeTab('pending')">Pending</li>
+      <li [class.active]="activeTab === 'running'" (click)="changeTab('running')">Running</li>
+      <li [class.active]="activeTab === 'completed'" (click)="changeTab('completed')">Completed</li>
+    </ul>
+  </div>
+  <div class="all-section">
+    <div class="pending" *ngIf="activeTab === 'pending'">
+      <div class="section-single-block">
+        <div class="single-top-sec">
+          <p>Hazia - Hyderabad</p>
+          <p>09 Mar, 2021 - 10:49 AM | Order# TP00000596</p>
+          <p>NL01N5951</p>
+          <p>40ft Trailer - 99507XXXXX</p>
+        </div>
+        <div class="single-bottom-sec">
+          <div class="single-line">
+            <p class="transit">In Transit</p>
+            <p>Late By 2869 mins</p>
+          </div>
+          <div class="single-line">
+            <p>Freight Rate</p>
+            <p>&#8377; 88350</p>
+          </div>
+          <div class="single-line">
+            <p></p>
+            <p class="total">&#8377; 88350</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-single-block">
+        <div class="single-top-sec">
+          <p>Hazia - Hyderabad</p>
+          <p>09 Mar, 2021 - 10:49 AM | Order# TP00000596</p>
+          <p>NL01N5951</p>
+          <p>40ft Trailer - 99507XXXXX</p>
+        </div>
+        <div class="single-bottom-sec">
+          <div class="single-line">
+            <p class="transit">In Transit</p>
+            <p>Late By 2869 mins</p>
+          </div>
+          <div class="single-line">
+            <p>Freight Rate</p>
+            <p>&#8377; 88350</p>
+          </div>
+          <div class="single-line">
+            <p></p>
+            <p class="total">&#8377; 88350</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="running" *ngIf="activeTab === 'running'">
+      <div class="section-single-block">
+        <div class="single-top-sec">
+          <p>Hazia - Hyderabad</p>
+          <p>09 Mar, 2021 - 10:49 AM | Order# TP00000596</p>
+          <p>NL01N5951</p>
+          <p>40ft Trailer - 99507XXXXX</p>
+        </div>
+        <div class="single-bottom-sec">
+          <div class="single-line">
+            <p class="transit">In Transit</p>
+            <p>Late By 2869 mins</p>
+          </div>
+          <div class="single-line">
+            <p>Freight Rate</p>
+            <p>&#8377; 88350</p>
+          </div>
+          <div class="single-line">
+            <p></p>
+            <p class="total">&#8377; 88350</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="completed" *ngIf="activeTab === 'completed'">
+      <div class="section-single-block">
+        <div class="single-top-sec">
+          <p>Hazia - Hyderabad</p>
+          <p>09 Mar, 2021 - 10:49 AM | Order# TP00000596</p>
+          <p>NL01N5951</p>
+          <p>40ft Trailer - 99507XXXXX</p>
+        </div>
+        <div class="single-bottom-sec">
+          <div class="single-line">
+            <p class="transit">In Transit</p>
+            <p>Late By 2869 mins</p>
+          </div>
+          <div class="single-line">
+            <p>Freight Rate</p>
+            <p>&#8377; 88350</p>
+          </div>
+          <div class="single-line">
+            <p></p>
+            <p class="total">&#8377; 88350</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

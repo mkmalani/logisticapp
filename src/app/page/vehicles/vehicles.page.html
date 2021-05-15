@@ -1,0 +1,63 @@
+<ion-header [translucent]="false" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+      <img src="assets/my-bids/back.svg" />
+    </div>
+    <ion-buttons slot="end">
+      <ion-button class="pad-btn">
+        <img class="header-btn" src="../../../assets/routes-rates/Icon awesome-search.png" />
+      </ion-button>
+      <ion-button class="pad-btn">
+        <img class="header-btn" src="../../../assets/routes-rates/Icon feather-filter.png" />
+      </ion-button>
+      <!-- <ion-button class="pad-btn">
+        <img class="header-btn" src="../../../assets/routes-rates/Group 13218.png" />
+      </ion-button> -->
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="../../../assets/order-detail/header.png" style="position: absolute; top: 0; z-index: -1;" alt="">
+  <div class="title-head">
+    <div>Vehicles</div>
+    <div>2 Vehicles found</div>
+  </div>
+  <ion-row class="mt-15">
+    <ion-col size="12" class="ion-text-center">
+      <ion-button color="theme1" shape="round" class="btn">Map View
+        <img class="btm-btn" src="../../../assets/vehicles/Icon feather-arrow-right.png" />
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <div class="ion-text-center down-title">Last Update at - 09 Mar, 2021 - 10:49 AM</div>
+  <div class="main-div">
+    <div class="single-block" *ngFor="let row of data">
+      <div class="single-block-inner">
+        <div class="top-div">
+          <p class="first-child">Ajit Singh</p>
+          <p><img src="../../../assets/my-bids/Group13337.png" alt=""></p>
+        </div>
+        <p class="second-child m0">Akshya Nagar, Bangalore-560016</p>
+        <p class="second-child">99507XXXXX</p>
+        <p class="first-child mt-10">NL01N5951</p>
+        <p class="second-child">40ft Trailer</p>
+        <div class="mt-10 badge-section">
+          <div class="badge">RC</div>
+          <div class="badge">FC</div>
+          <div class="badge">DL</div>
+          <div class="badge">DA</div>
+          <div class="badge">Insurance</div>
+        </div>
+      </div>
+      <div class="single-block-inner">
+        <div class="other-block">
+         <div>In Transit</div>
+         <div *ngIf="row.isEdit" (click)="row.isEdit = !row.isEdit"><img src="../../../assets/vehicles/Group 13336.png" alt=""></div>
+         <div *ngIf="!row.isEdit" (click)="row.isEdit = !row.isEdit"><img src="../../../assets/vehicles/Group 13337.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

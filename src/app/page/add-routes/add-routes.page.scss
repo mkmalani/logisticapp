@@ -1,0 +1,27 @@
+ion-content {
+    --background: #fff;
+    // --background: url("../../../assets/background.png") no-repeat 100% 0% / contain;
+    .background {
+        position: absolute;
+        z-index: -1;
+        top: 0; 
+    }
+    --offset-top: 79px !important;
+}
+ion-header {
+    background: url("../../../assets/background.png") no-repeat 100% 0% / contain;
+    border: none;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+}
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    color: #fff;
+}
+.popup-form {
+    margin: 25px 20px !important;
+    padding: 5px 15px 15px 15px !important;
+}

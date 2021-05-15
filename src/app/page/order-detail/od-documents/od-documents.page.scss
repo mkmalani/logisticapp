@@ -1,0 +1,50 @@
+.od-document-full {
+    padding: 0 15px;
+    .add-new-button {
+        ion-button {
+            --box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            --background: #fff;
+            --border-radius: 50px;
+            width: 58%;
+            display: block;
+            margin: 74px auto 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "montserratsemibold";
+            color: #7966fe;
+            height: 56px;
+        }
+    }
+    .document-content {
+        .doc-sec-inner {
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 35px;
+            .doc-sec-single-block {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #9a9cb8;
+                }
+                p {
+                    color: #000000;
+                }
+                ion-button {
+                    width: 35px;
+                    height: 35px;
+                    --border-radius: 50%;
+                    --padding-start: 0;
+                    --padding-end: 0;
+                    --background: transparent;
+                    img {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

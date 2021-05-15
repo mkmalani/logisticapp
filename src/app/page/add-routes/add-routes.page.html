@@ -1,0 +1,89 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+      <img src="assets/my-bids/back.svg" />
+    </div>
+    <ion-title>Add New Route</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../../assets/background.png" class="background">
+  <div class="app-form">
+    <ion-grid class="form-background popup-form">
+      <ion-row>
+        <ion-col size="12" class="m-t-20">
+          <ion-item lines="none">
+            <ion-select placeholder="Select Vehicle Type">
+              <ion-select-option value="0">Two Vehicle</ion-select-option>
+              <ion-select-option value="1">Three Vehicle</ion-select-option>
+              <ion-select-option value="2">Four Vehicle</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="From Location"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="To Location"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Select Destination Zone"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input type="text" placeholder="Enter Destination State"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" class="m-t-10">
+          <ion-label>Onward TAT (in days)</ion-label>
+          <ion-item lines="none">
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="m-t-10">
+          <ion-label>Onward rate</ion-label>
+          <ion-item lines="none">
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" class="m-t-10">
+          <ion-label>Return TAT (in days)</ion-label>
+          <ion-item lines="none">
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="m-t-10">
+          <ion-label>Return rate</ion-label>
+          <ion-item lines="none">
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center m-t-20">
+          <ion-button color="success" shape="round" class="btn" (click)="navigate()">SAVE</ion-button>
+          <ion-button color="danger" shape="round" class="btn" (click)="navigate()">CANCEL</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

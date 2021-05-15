@@ -1,0 +1,36 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <img src="../../../assets/home/burger.png" />
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="../../../assets/my-bids/header.png" style="position: absolute; top: 0; z-index: -1;" alt="">
+  <div class="title-head">
+    <div>Order ID TP00000565</div>
+  </div>
+  <div class="main-div">
+    <div class="single-block" *ngFor="let data of items">
+      <div class="single-block-inner">
+        <div class="d-flex">
+          <div class="img-div">
+            <img src="../../../assets/home/thumbnail.png">
+          </div>
+          <div class="desc-div">
+            <div>&#8377;2850</div>
+            <div class="p-15">
+              <p class="first-child">Hazia - Hyderabad</p>
+              <p class="other-child">09 Mar, 2021  -  10:49 AM</p>
+              <p class="other-child">40ft Trailer, 743 kms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

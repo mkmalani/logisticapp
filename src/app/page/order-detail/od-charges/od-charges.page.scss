@@ -1,0 +1,42 @@
+.od-charge-full {
+    padding: 0 15px;
+    .add-new-button {
+        ion-button {
+            --box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            --background: #fff;
+            --border-radius: 50px;
+            width: 49%;
+            display: block;
+            margin: 74px auto 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "montserratsemibold";
+            color: #7966fe;
+            height: 56px;
+        }
+    }
+    .content-section {
+        .content-section-inner {
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 30px;
+            .content-sec-single-block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 20px;
+                font-size: 16px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #9A9CB8;
+                }
+                p {
+                    color: #000;
+                    &:nth-child(2) {
+                        color: #9A9CB8;
+                    }
+                }
+            }
+        }
+    }
+}

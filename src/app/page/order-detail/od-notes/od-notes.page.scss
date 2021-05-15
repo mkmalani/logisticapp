@@ -1,0 +1,27 @@
+.full-notes-div {
+    padding: 0 15px;
+    .text-area-sec {
+        margin-top: 155px;
+        p {
+            font-family: "montserratsemibold";
+            text-transform: uppercase;
+        }
+        ion-textarea {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            color: #000;
+            padding: 5px 15px;
+            height: 225px;
+        }
+    }
+    ion-button {
+        --background: #7966fe;
+        display: block;
+        margin: 40px auto 0;
+        width: 210px;
+        --border-radius: 50px;
+        height: 50px;
+        font-family: 'montserratbold';
+    }
+}

@@ -1,0 +1,34 @@
+<ion-header mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Order Details</ion-title>
+    <img class="header-log" slot="end" src="assets/order-detail/header-logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/order-detail/header.png" class="header-img" alt="">
+  <div class="order-id">Order ID TP00000596
+  </div>
+  <div class="order-detail-menu">
+    <ul>
+      <li [class.active]="acivatedTab === 'summary'" (click)="changeTab('summary')">Summary</li>
+      <li [class.active]="acivatedTab === 'status'" (click)="changeTab('status')">Status</li>
+      <li [class.active]="acivatedTab === 'charges'" (click)="changeTab('charges')">Charges</li>
+      <li [class.active]="acivatedTab === 'payment'" (click)="changeTab('payment')">Payment</li>
+      <li [class.active]="acivatedTab === 'documents'" (click)="changeTab('documents')">Documents</li>
+      <li [class.active]="acivatedTab === 'notes'" (click)="changeTab('notes')">Notes</li>
+    </ul>
+  </div>
+  <div class="order-detail-content">
+    <app-od-summary *ngIf="acivatedTab === 'summary'"></app-od-summary>
+    <app-od-status *ngIf="acivatedTab === 'status'"></app-od-status>
+    <app-od-charges *ngIf="acivatedTab === 'charges'"></app-od-charges>
+    <app-od-payment *ngIf="acivatedTab === 'payment'"></app-od-payment>
+    <app-od-documents *ngIf="acivatedTab === 'documents'"></app-od-documents>
+    <app-od-notes *ngIf="acivatedTab === 'notes'"></app-od-notes>
+  </div>
+</ion-content>

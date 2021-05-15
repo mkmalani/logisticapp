@@ -1,0 +1,36 @@
+.od-summary-full {
+    padding: 0 15px;
+    .single-block {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+        .single-block-inner {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            img {
+                height: 50px;
+                width: 50px;
+                margin-right: 20px;
+            }
+            .block-content {
+                p {
+                    color: #000;
+                    &:nth-child(2) {
+                        color: #9A9CB8;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &:first-child {
+                border-bottom: 1px solid #9A9CB8;
+            }
+        }
+    }
+    .map-block {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+}

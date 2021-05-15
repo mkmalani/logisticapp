@@ -1,0 +1,88 @@
+.od-payment-full {
+    padding: 0 15px;
+    .add-new-button {
+        ion-button {
+            --box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            --background: #fff;
+            --border-radius: 50px;
+            width: 49%;
+            display: block;
+            margin: 74px auto 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "montserratsemibold";
+            color: #7966fe;
+            height: 56px;
+        }
+    }
+    .content-section {
+        .content-section-inner {
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 30px;
+            .content-sec-single-block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 20px;
+                font-size: 16px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #9a9cb8;
+                }
+                p {
+                    color: #000;
+                    &:nth-child(2) {
+                        color: #9a9cb8;
+                    }
+                }
+            }
+        }
+    }
+    .history-section {
+        .history-section-inner {
+            box-shadow: 0 22px 56px rgb(0 0 0 / 9%);
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            .history-single-block {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                justify-content: space-between;
+                div:not(:last-child) {
+                    padding-right: 10px;
+                }
+                .date-div {
+                    color: #000000;
+                }
+                .money-div {
+                    color: #9a9cb8;
+                }
+                .action-div {
+                    display: flex;
+                    justify-content: flex-end;
+                    ion-button {
+                        width: 35px;
+                        height: 35px;
+                        --border-radius: 50%;
+                        --padding-start: 0;
+                        --padding-end: 0;
+                        --background: transparent;
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                        img {
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid #9a9cb8;
+                }
+            }
+        }
+    }
+}

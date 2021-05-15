@@ -1,0 +1,61 @@
+ion-content {
+  --background: rgb(244, 245, 249);
+  --offset-top: 79px !important;
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+}
+
+ion-header {
+  background: url("../../../assets/editprofile/2.png") no-repeat 100% 0% / contain;
+  border: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center top;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  color: #fff;
+}
+
+.editprofile-body {
+  margin-top: 20%;
+}
+
+.menu-header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+
+  .user-profile {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+
+    .user-profile-edit-icon {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.mt-50 {
+    margin-top: -45px;
+}
+.mb-35 {
+    margin-bottom: -35px;
+}

@@ -1,0 +1,98 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "assets/css/form.css";
+
+@font-face {
+  font-family: 'montserratmedium';
+  src: url('assets/font/montserrat-medium-webfont.eot');
+  src: url('assets/font/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/montserrat-medium-webfont.woff2') format('woff2'),
+    url('assets/font/montserrat-medium-webfont.woff') format('woff'),
+    url('assets/font/montserrat-medium-webfont.ttf') format('truetype'),
+    url('assets/font/montserrat-medium-webfont.svg#montserratmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url('assets/font/montserrat-semibold-webfont.eot');
+  src: url('assets/font/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('assets/font/montserrat-semibold-webfont.woff') format('woff'),
+    url('assets/font/montserrat-semibold-webfont.ttf') format('truetype'),
+    url('assets/font/montserrat-semibold-webfont.svg#montserratsemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('assets/font/montserrat-bold-webfont.eot');
+  src: url('assets/font/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/montserrat-bold-webfont.woff2') format('woff2'),
+    url('assets/font/montserrat-bold-webfont.woff') format('woff'),
+    url('assets/font/montserrat-bold-webfont.ttf') format('truetype'),
+    url('assets/font/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  font-family: 'montserratmedium';
+}
+
+p {
+  margin: 0;
+}
+
+ion-header {
+  padding-top: 35px;
+}
+
+ion-title {
+  font-family: 'montserratsemibold';
+  font-size: 18px;
+}
+
+.back-button {
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.my-newload-modal .modal-wrapper {
+  --background: rgb(0 0 0 / 30%);
+  --width: calc(100% - 40px);
+  --height: calc(100% - 40px);
+  --border-radius: 10px;
+}

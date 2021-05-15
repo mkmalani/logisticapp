@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <div class="menu-header">
+          <img src="assets/menu/1.png" class="menu-header-background">
+          <div class="menu-header-content">
+            <div class="user-profile">
+              <img src="assets/menu/user.png">
+              <div class="user-profile-edit-icon" (click)="editProfile()">
+                <img src="assets/menu/edit.png">
+              </div>
+            </div>
+            <p>SWIFT LIFTER PVT LTD</p>
+          </div>
+        </div>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+            routerLinkActive="selected">
+            <img src="assets/menu/{{p.icon}}" class="menu-icon" />
+            <ion-label class="menu-title">{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
