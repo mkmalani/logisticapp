@@ -49,4 +49,14 @@
             </div>
         </div>
     </div>
+    <div class="step-section">
+        <ul class="progressbar">
+            <li [class.active]="activeStep >= 1" (click)="changeStep(1)">Step 1</li>
+            <li [class.active]="activeStep >= 2" (click)="changeStep(2)">Step 2</li>
+            <li [class.active]="activeStep >= 3" (click)="changeStep(3)">Step 3</li>
+            <li [class.active]="activeStep >= 4" (click)="changeStep(4)">Step 4</li>
+            <li [class.active]="activeStep >= 5" (click)="changeStep(5)">Step 5</li>
+            <li [class.active]="activeStep >= 6" (click)="changeStep(6)">Step 6</li>
+        </ul>
+    </div>
 </div>

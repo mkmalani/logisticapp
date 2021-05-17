@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OdStatusPage implements OnInit {
   activeTab = 'loading';
+  activeStep = 1;
   constructor() { }
 
   ngOnInit() {
@@ -14,6 +15,10 @@ export class OdStatusPage implements OnInit {
 
   changeTab(tab) {
     this.activeTab = tab;
+  }
+
+  changeStep(step) {
+    this.activeStep = step;
   }
 
 }
