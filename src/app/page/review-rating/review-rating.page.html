@@ -1,8 +1,17 @@
-<ion-content>
+<ion-header [translucent]="false" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <div class="back-button" (click)="navigate()">
+			<img src="assets/my-bids/back.svg" />
+		</div>
+    <ion-title>Rating Review</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="false">
+  <img src="../../../assets/my-bids/header.png" style="position: absolute; top: 0; z-index: -1;" alt="">
   <div class="main-div">
-    <div class="head-div">
+    <!-- <div class="head-div">
       <h2>Rating Review</h2>
-    </div>
+    </div> -->
     <div class="star-div">
       <ion-icon name="star-outline"></ion-icon>
       <ion-icon name="star-outline"></ion-icon>
@@ -15,13 +24,17 @@
     </div>
     <div class="text-area-sec">
       <p>Write Your Review (200 Character)</p>
-      <ion-textarea placeholder="Enter Note"></ion-textarea>
+      <ion-textarea placeholder="Enter Note" rows="6"></ion-textarea>
     </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="bg-color">
     <ion-row>
       <ion-col size="12" class="ion-text-center m-t-10 m-b-20">
         <ion-button color="success" shape="round" class="btn" (click)="navigate()">SUBMIT</ion-button>
         <ion-button color="danger" shape="round" class="btn" (click)="navigate()">CANCEL</ion-button>
       </ion-col>
     </ion-row>
-  </div>
-</ion-content>
+  </ion-toolbar>
+</ion-footer>
