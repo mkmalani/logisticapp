@@ -103,3 +103,36 @@ ion-title {
   --height: calc(100% - 160px);
   --border-radius: 10px;
 }
+
+.li-ionic4-datePicker {
+  position: fixed !important;
+  .modal-wrapper {
+    height: 480px;
+    max-height: 100%;
+    width: 340px;
+    border-radius: 8px;
+  }
+  .disabled {
+    color: rgba(0, 0, 0, 0.21) !important;
+    background: rgba(170, 170, 170, 0.1) !important;
+  }
+  .header-ios ,
+  .header-md {
+    padding-top: 0 !important;
+    height: auto !important;
+  }
+  ion-header.header-ios ion-toolbar,
+  ion-header.header-md ion-toolbar {
+    --background: linear-gradient( 270deg , #a87ff5 0%, #5860e6 100%) !important;
+  }
+  ion-footer.footer-ios ion-toolbar ion-button,
+  ion-footer.footer-md ion-toolbar ion-button {
+    --background: var(--ion-color-danger, #eb445a) !important;
+  }
+  ion-content ion-button {
+    color: #5860e6 !important;
+  }
+  ion-content ion-col.dp-selecteddate {
+    background: linear-gradient( 270deg , #a87ff5 0%, #5860e6 100%) !important;
+  }
+}

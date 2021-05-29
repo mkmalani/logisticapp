@@ -9,10 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
+import { Ionic4DatepickerModule } from '@logisticinfotech/ionic4-datepicker';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    Ionic4DatepickerModule,
+    BrowserModule,
+    IonicModule.forRoot(), 
+    AppRoutingModule
+  ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     StatusBar,
