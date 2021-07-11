@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 import { Ionic4DatepickerModule } from '@logisticinfotech/ionic4-datepicker';
 @NgModule({
@@ -22,7 +23,8 @@ import { Ionic4DatepickerModule } from '@logisticinfotech/ionic4-datepicker';
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     StatusBar,
-    SplashScreen
+    SplashScreen,
+    Keyboard
   ],
   bootstrap: [AppComponent],
 })

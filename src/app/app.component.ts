@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MenuController, Platform } from '@ionic/angular';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
@@ -28,14 +29,16 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private menuCtrl: MenuController,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private keyboard: Keyboard
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(async () => {
-      this.statusBar.overlaysWebView(true);
+      // this.statusBar.overlaysWebView(true);
+      this.keyboard.disableScroll(true);
       this.splashScreen.hide();
     });
   }
