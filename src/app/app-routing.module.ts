@@ -57,10 +57,15 @@ const routes: Routes = [
     path: 'new-load',
     loadChildren: () => import('./page/new-load/new-load.module').then( m => m.NewLoadPageModule)
   },
-  {path: '**', redirectTo: 'home', pathMatch: 'full'},  {
+  {
     path: 'review-rating',
     loadChildren: () => import('./page/review-rating/review-rating.module').then( m => m.ReviewRatingPageModule)
   },
+  {
+    path: 'order-status',
+    loadChildren: () => import('./page/order-status/order-status.module').then( m => m.OrderStatusPageModule)
+  },
+  {path: '**', redirectTo: 'home', pathMatch: 'full'},
 
 ];
 

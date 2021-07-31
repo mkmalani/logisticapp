@@ -19,6 +19,7 @@ export class AppComponent {
     { title: 'Vehicles', url: '/vehicles', icon: 'vehicles.png' },
     { title: 'Routes & Rates', url: '/routes-rates', icon: 'routes.png' },
     { title: 'Edit Profile', url: '/editprofile', icon: 'editprofile.png' },
+    { title: 'Order Status', url: '/order-status', icon: 'editprofile.png' },
     { title: 'Privacy Policy', url: '/home', icon: 'privacy.png' },
     { title: 'About Us', url: '/home', icon: 'aboutus.png' },
     { title: 'Contact Us', url: '/home', icon: 'contactus.png' },
